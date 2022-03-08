@@ -1,2 +1,1 @@
-#!/bin/bash
-var=$($PATH 2>&1 | grep -o ":" | wc -l) | echo $(($var-1))
+PATH=/home/julien/bin:/home/julien/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:::::/hello 
