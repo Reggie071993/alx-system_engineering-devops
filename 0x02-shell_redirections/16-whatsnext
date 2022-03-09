@@ -1,0 +1,2 @@
+#!/bin/bash
+cat /et/passwd/ |grep -A 3 "root"
