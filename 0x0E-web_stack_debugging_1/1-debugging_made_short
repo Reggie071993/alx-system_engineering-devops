@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Script that make nginx run and listen to port 80 of servers active IPv4
+
+ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+
+service nginx start
+
+kill "$(pgrep 'nginx' | head -1)"
