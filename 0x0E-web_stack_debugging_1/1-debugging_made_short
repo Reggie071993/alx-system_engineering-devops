@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
-# Script that make nginx run and listen to port 80 of servers active IPv4
-
+# script to link sites-enabled to sites-available and start nginx without running status
 ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
-
-service nginx start
-
-kill "$(pgrep 'nginx' | head -1)"
+sudo service nginx start
+rm /run/nginx.pid
